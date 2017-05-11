@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dependencies>
-   <includePath signature="/I..\..\..\..\..\Users\franc\Dropbox\school\05 EV5 Bovenbouw vakinhoud\softont\Demo_35_VGA1\VGA_core_M4\ub_lib /I..\..\..\..\..\Users\franc\Dropbox\school\05 EV5 Bovenbouw vakinhoud\softont\Demo_35_VGA1\VGA_core_M4\cmsis_boot /I..\..\..\..\..\Users\franc\Dropbox\school\05 EV5 Bovenbouw vakinhoud\softont\Demo_35_VGA1\VGA_core_M4\cmsis /I..\..\..\..\..\Users\franc\Dropbox\school\05 EV5 Bovenbouw vakinhoud\softont\Demo_35_VGA1\VGA_core_M4 /I..\..\..\..\..\Users\franc\Dropbox\school\05 EV5 Bovenbouw vakinhoud\softont\Demo_35_VGA1 /I..\..\..\..\..\Users\franc\Dropbox\school\05 EV5 Bovenbouw vakinhoud\softont\Demo_35_VGA1\VGA_core_M4\cmsis_lib\include /I..\..\..\..\..\Users\franc\Dropbox\school\05 EV5 Bovenbouw vakinhoud\softont\Demo_35_VGA1\VGA_core_M4\cmsis_lib">
-      <source file="..\..\..\ub_lib\stm32_ub_vga_screen.h" lastModified="153c90c24fc">
+   <includePath signature="/I..\..\..\..\..\Users\Jordy\Desktop\VGA_core_M4\cmsis_boot /I..\..\..\..\..\Users\Jordy\Desktop /I..\..\..\..\..\Users\Jordy\Desktop\VGA_core_M4\ub_lib /I..\..\..\..\..\Users\Jordy\Desktop\VGA_core_M4 /I..\..\..\..\..\Users\Jordy\Desktop\VGA_core_M4\cmsis /I..\..\..\..\..\Users\Jordy\Desktop\VGA_core_M4\cmsis_lib /I..\..\..\..\..\Users\Jordy\Desktop\VGA_core_M4\cmsis_lib\include">
+      <source file="..\..\..\ub_lib\stm32_ub_vga_screen.h" lastModified="15bb42823ae">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
@@ -16,7 +16,7 @@
          <include file="..\..\..\cmsis\core_cmFunc.h"/>
          <include file="..\..\..\cmsis\core_cm4_simd.h"/>
       </source>
-      <source file="..\..\..\ub_lib\stm32_ub_vga_screen.c" lastModified="153c8fea1bf">
+      <source file="..\..\..\ub_lib\stm32_ub_vga_screen.c" lastModified="153c8fea930">
          <include file="..\..\..\ub_lib\stm32_ub_vga_screen.h"/>
       </source>
       <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="152a194bed0">
@@ -63,10 +63,6 @@
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
       <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="152a194c2b8">
-      </source>
-      <source file="..\..\..\main.c" lastModified="153c90f8f66">
-         <include file="..\..\..\main.h"/>
-         <include file="..\..\..\ub_lib\stm32_ub_vga_screen.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="152a194bed0">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
