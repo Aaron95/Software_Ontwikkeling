@@ -66,6 +66,12 @@
       </source>
       <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="152a194c2b8">
       </source>
+      <source file="..\..\..\main.c" lastModified="15c1cad0927">
+         <include file="..\..\..\main.h"/>
+         <include file="..\..\..\ub_lib\stm32_ub_vga_screen.h"/>
+         <include file="..\..\..\bitmap.h"/>
+         <include file="..\..\..\API_Data_Layer.h"/>
+      </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="152a194bed0">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>

@@ -10,10 +10,17 @@
 // Function : VGA_core DMA LIB 320x240, 8bit color
 //--------------------------------------------------------------
 
+/**
+   @file ledmatrix.cpp
+   @author  Ronald Boon <ronald.boon@moba.nl>
+   @version 1.5
+
+   for more information, see readme.
+*/
 #include "main.h"
 #include "stm32_ub_vga_screen.h"
 #include "bitmap.h"
-#include "Data_Layer.h"
+#include "API_Data_Layer.h"
 #include <math.h>
 
 
@@ -43,7 +50,7 @@ int main(void)
 
   Teken_Lijn(319, 239, 0, 0, VGA_COL_CYAN);
   */
-  TekenBitmap("Scager");
+  Teken_Bitmap("Scager");
   while(1)
   {
 

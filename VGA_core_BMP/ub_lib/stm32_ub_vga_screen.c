@@ -37,6 +37,10 @@ void P_VGA_InitDMA(void);
 //--------------------------------------------------------------
 void UB_VGA_Screen_Init(void)
 {
+	/** \fn
+	 *  Action: Deze functie initieert het VGA scherm voor gebruik
+	 *  Subject: Pixels
+	*/
   uint16_t xp,yp;
 
   VGA.hsync_cnt=0;
@@ -72,6 +76,11 @@ void UB_VGA_Screen_Init(void)
 //--------------------------------------------------------------
 void UB_VGA_FillScreen(uint8_t color)
 {
+	/** \fn
+	 *  Action: Deze functie vult het scherm met een bepaalde kleur
+	 *  Input: uint8_t color
+	 *  Subject: Pixels
+	*/
   uint16_t xp,yp;
 
   for(yp=0;yp<VGA_DISPLAY_Y;yp++) {
@@ -88,6 +97,11 @@ void UB_VGA_FillScreen(uint8_t color)
 //--------------------------------------------------------------
 void UB_VGA_SetPixel(uint16_t xp, uint16_t yp, uint8_t color)
 {
+	/** \fn
+	 *  Action: Deze functie tekent een pixel op het scherm op een bepaalde positie met een bepaalde kleur
+	 *  Input: uint16_t xp, uint16_t yp, uint8_t color
+	 *  Subject: Pixel
+	*/
   if(xp>=VGA_DISPLAY_X) xp=0;
   if(yp>=VGA_DISPLAY_Y) yp=0;
 
