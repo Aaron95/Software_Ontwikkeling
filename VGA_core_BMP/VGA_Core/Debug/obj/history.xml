@@ -4,8 +4,8 @@
       <target file="stm32f4xx_gpio.o" lastModified="15c1c186b59">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="152a194bed0"/>
       </target>
-      <target file="stm32_ub_vga_screen.o" lastModified="15c1c186d55">
-         <source file="..\..\..\ub_lib\stm32_ub_vga_screen.c" lastModified="153c8fea930"/>
+      <target file="stm32_ub_vga_screen.o" lastModified="15c2153f05a">
+         <source file="..\..\..\ub_lib\stm32_ub_vga_screen.c" lastModified="15c1cba287a"/>
       </target>
       <target file="stm32f4xx_dma.o" lastModified="15c1c186cb1">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="152a194bed0"/>
@@ -19,8 +19,8 @@
       <target file="startup_stm32f4xx.o" lastModified="15c1c18660b">
          <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="152a194bed0"/>
       </target>
-      <target file="main.o" lastModified="15c1cb13b67">
-         <source file="..\..\..\main.c" lastModified="15c1cad053f"/>
+      <target file="main.o" lastModified="15c217138cf">
+         <source file="..\..\..\main.c" lastModified="15c217040e8"/>
       </target>
       <target file="stm32f4xx_rcc.o" lastModified="15c1c186ab6">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="152a194bed0"/>

@@ -50,7 +50,8 @@ int main(void)
 
   Teken_Lijn(319, 239, 0, 0, VGA_COL_CYAN);
   */
-  Teken_Bitmap("Scager");
+ // Teken_Bitmap("Scager");
+  Ellipse(100, 100, 70, 50, VGA_COL_WHITE);
   while(1)
   {
 
