@@ -59,16 +59,14 @@ int main(void)
 //  Teken_Bitmap(160, 0, "Pijl_Omlaag");
 //  Teken_Bitmap(120, 80, "Scager");
 //  Ellipse(159, 119, 160, 50, VGA_COL_WHITE);
-=======
 
-  Teken_Lijn(319, 239, 0, 0, VGA_COL_CYAN);
-  */
+ // Teken_Lijn(319, 239, 0, 0, VGA_COL_CYAN);
+
  // Teken_Bitmap("Scager");
   //Ellipse(100, 100, 70, 50, VGA_COL_WHITE);
   //UB_VGA_ReadPixel(2,5);
   //UART_puts("DOE HET");
 
->>>>>>> cf934ccad18143bce17458fecb3be15f77e89b20
   while(1)
   {
 	  int buf =0;
@@ -77,7 +75,8 @@ int main(void)
 	  switch(buf)
 	  {
 	  case "lijn":
-		  Teken_Lijn(319, 239, 0, 0, VGA_COL_CYAN);
+		  Teken_Lijn(319, 239, 0, 0, 5, VGA_COL_CYAN);
+		  break;
 
 	  }
   }
