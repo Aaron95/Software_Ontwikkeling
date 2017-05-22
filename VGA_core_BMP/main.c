@@ -49,6 +49,17 @@ int main(void)
   Teken_Rechthoek(0, 0, 319, 239, VGA_COL_WHITE);
 
   Teken_Driehoek(20, 120, 100, 200, VGA_COL_GREEN);
+<<<<<<< HEAD
+*/
+  Teken_Lijn(10, 120, 100, 120, 5,  VGA_COL_CYAN);
+  Teken_Lijn(10, 10, 100, 200, 10,  VGA_COL_YELLOW);
+
+//  Teken_Bitmap(0, 0, "Smiley_Sad");
+//  Teken_Bitmap(80, 0, "Smiley_Happy");
+//  Teken_Bitmap(160, 0, "Pijl_Omlaag");
+//  Teken_Bitmap(120, 80, "Scager");
+//  Ellipse(159, 119, 160, 50, VGA_COL_WHITE);
+=======
 
   Teken_Lijn(319, 239, 0, 0, VGA_COL_CYAN);
   */
@@ -57,6 +68,7 @@ int main(void)
   //UB_VGA_ReadPixel(2,5);
   //UART_puts("DOE HET");
 
+>>>>>>> cf934ccad18143bce17458fecb3be15f77e89b20
   while(1)
   {
 	  int buf =0;
