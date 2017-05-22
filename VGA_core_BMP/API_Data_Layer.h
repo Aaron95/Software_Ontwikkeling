@@ -155,6 +155,49 @@ void Teken_Bitmap(uint16_t xp0, uint16_t yp0, char *Plaatje)
 				}
 			}
 		}
+
+	else if(Plaatje == "Pijl_Links")
+			{
+				int VerticaleTeller;
+				int HorizontaleTeller;
+
+				for (VerticaleTeller = 0; VerticaleTeller < 80; VerticaleTeller++)
+				{
+					for (HorizontaleTeller = 0; HorizontaleTeller < 80; HorizontaleTeller++)
+					{
+						UB_VGA_SetPixel((79 - VerticaleTeller) + xp0,HorizontaleTeller + yp0,BMP_Pijl_Omlaag[VerticaleTeller][HorizontaleTeller]);
+					}
+				}
+			}
+
+	else if(Plaatje == "Pijl_Rechts")
+			{
+				int VerticaleTeller;
+				int HorizontaleTeller;
+
+				for (VerticaleTeller = 0; VerticaleTeller < 80; VerticaleTeller++)
+				{
+					for (HorizontaleTeller = 0; HorizontaleTeller < 80; HorizontaleTeller++)
+					{
+						UB_VGA_SetPixel(VerticaleTeller + xp0,HorizontaleTeller + yp0,BMP_Pijl_Omlaag[VerticaleTeller][HorizontaleTeller]);
+					}
+				}
+			}
+
+	else if(Plaatje == "Pijl_Omhoog")
+			{
+				int VerticaleTeller;
+				int HorizontaleTeller;
+
+				for (VerticaleTeller = 0; VerticaleTeller < 80; VerticaleTeller++)
+				{
+					for (HorizontaleTeller = 0; HorizontaleTeller < 80; HorizontaleTeller++)
+					{
+						UB_VGA_SetPixel(HorizontaleTeller + xp0,(79 - VerticaleTeller) + yp0,BMP_Pijl_Omlaag[VerticaleTeller][HorizontaleTeller]);
+					}
+				}
+			}
+
 	else if(Plaatje == "Smiley_Sad")
 			{
 				int VerticaleTeller;

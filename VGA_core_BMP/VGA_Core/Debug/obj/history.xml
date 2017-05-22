@@ -1,38 +1,32 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\gebruiker\Documents\GitHub\Software_Ontwikkeling\VGA_core_BMP\cmsis_lib\include -I..\..\..\..\..\Users\gebruiker\Dropbox\my_app\uC-OS II -I..\..\..\..\..\Users\gebruiker\Documents\GitHub\Software_Ontwikkeling\VGA_core_BMP\cmsis_lib -I..\..\..\..\..\Users\gebruiker\Documents\GitHub\Software_Ontwikkeling\VGA_core_BMP\cmsis -I..\..\..\..\..\Users\gebruiker\Documents\GitHub\Software_Ontwikkeling -I..\..\..\..\..\Users\gebruiker\Dropbox\my_app -I..\..\..\..\..\Users\gebruiker\Documents\GitHub\Software_Ontwikkeling\VGA_core_BMP\ub_lib -I..\..\..\..\..\Users\gebruiker\Dropbox\my_app\uC-OS II\Application specific -I..\..\..\..\..\Users\gebruiker\Documents\GitHub\Software_Ontwikkeling\VGA_core_BMP\cmsis_boot -I..\..\..\..\..\Users\gebruiker\Documents\GitHub -I..\..\..\..\..\Users\gebruiker\Documents\GitHub\Software_Ontwikkeling\VGA_core_BMP">
-      <target file="stm32f4xx_gpio.o" lastModified="15c2ffb287d">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="152a194bed0"/>
+   <processor signature="arm-none-eabi-gcc 4.7.1 mingw32 -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -IF:\School\Software_Ontwikkeling\Software_Ontwikkeling\VGA_core_BMP\cmsis_lib -IF:\School\Software_Ontwikkeling\Software_Ontwikkeling\VGA_core_BMP\cmsis -IF:\School\Software_Ontwikkeling -IF:\Dropbox\my_app\uC-OS II\Application specific -IF:\School\Software_Ontwikkeling\Software_Ontwikkeling\VGA_core_BMP\cmsis_boot -IF:\School\Software_Ontwikkeling\Software_Ontwikkeling -IF:\Dropbox\my_app\uC-OS II -IF:\School\Software_Ontwikkeling\Software_Ontwikkeling\VGA_core_BMP -IF:\School\Software_Ontwikkeling\Software_Ontwikkeling\VGA_core_BMP\cmsis_lib\include -IF:\School\Software_Ontwikkeling\Software_Ontwikkeling\VGA_core_BMP\ub_lib -IF:\Dropbox\my_app">
+      <target file="stm32f4xx_gpio.o" lastModified="15c3008a25e">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="15c2f41b420"/>
       </target>
-      <target file="uart.o" lastModified="15c2ffb2245">
-         <source file="..\..\..\uart.c" lastModified="15c2fecc75f"/>
+      <target file="stm32_ub_vga_screen.o" lastModified="15c3008a455">
+         <source file="..\..\..\ub_lib\stm32_ub_vga_screen.c" lastModified="15c2ff326f5"/>
       </target>
-      <target file="stm32_ub_vga_screen.o" lastModified="15c2ffb29fb">
-         <source file="..\..\..\ub_lib\stm32_ub_vga_screen.c" lastModified="15c2fecc765"/>
+      <target file="stm32f4xx_dma.o" lastModified="15c3008a388">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="15c2f41b41d"/>
       </target>
-      <target file="stm32f4xx_dma.o" lastModified="15c2ffb2951">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="152a194bed0"/>
+      <target file="stm32f4xx_tim.o" lastModified="15c3008a605">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="15c2f41b438"/>
       </target>
-      <target file="stm32f4xx_tim.o" lastModified="15c2ffb2b3f">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="152a194bed0"/>
+      <target file="system_stm32f4xx.o" lastModified="15c3008a2e2">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="15c2f41b37d"/>
       </target>
-      <target file="system_stm32f4xx.o" lastModified="15c2ffb28e1">
-         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="152a194bed0"/>
+      <target file="startup_stm32f4xx.o" lastModified="15c30089d54">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="15c2f41b2eb"/>
       </target>
-      <target file="startup_stm32f4xx.o" lastModified="15c2ffb22ae">
-         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="152a194bed0"/>
+      <target file="stm32f4xx_usart.o" lastModified="15c30089ca5">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="15c2ff326f2"/>
       </target>
-      <target file="stm32f4xx_usart.o" lastModified="15c2ffb21c3">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="15c2fecc754"/>
+      <target file="stm32f4xx_rcc.o" lastModified="15c3008a1c3">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="15c2f41b42f"/>
       </target>
-      <target file="main.o" lastModified="15c2ff58885">
-         <source file="..\..\..\main.c" lastModified="15c2ffb1f4f"/>
-      </target>
-      <target file="stm32f4xx_rcc.o" lastModified="15c2ffb280b">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="152a194bed0"/>
-      </target>
-      <target file="misc.o" lastModified="15c2ffb2a5d">
-         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="152a194bed0"/>
+      <target file="misc.o" lastModified="15c3008a4d6">
+         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="15c2f41b417"/>
       </target>
    </processor>
 </history>
