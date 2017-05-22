@@ -36,6 +36,8 @@ int main(void)
 	//  uint32_t n;
 
 	SystemInit(); // System speed to 168MHz
+	UART_init();
+	//UART_INT_init();
 
 	UB_VGA_Screen_Init(); // Init VGA-Screen
 
@@ -51,10 +53,20 @@ int main(void)
   Teken_Lijn(319, 239, 0, 0, VGA_COL_CYAN);
   */
  // Teken_Bitmap("Scager");
-  Ellipse(100, 100, 70, 50, VGA_COL_WHITE);
+  //Ellipse(100, 100, 70, 50, VGA_COL_WHITE);
+  //UB_VGA_ReadPixel(2,5);
+  //UART_puts("DOE HET");
+
   while(1)
   {
+	  int buf =0;
+	  UART_gets(buf, 1);
+	  switch(buf)
+	  {
+	  case "lijn":
+		  Teken_Lijn(319, 239, 0, 0, VGA_COL_CYAN);
 
+	  }
   }
 }
 

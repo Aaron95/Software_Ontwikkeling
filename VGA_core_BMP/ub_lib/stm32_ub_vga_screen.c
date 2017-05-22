@@ -109,6 +109,15 @@ void UB_VGA_SetPixel(uint16_t xp, uint16_t yp, uint8_t color)
   VGA_RAM1[(yp*(VGA_DISPLAY_X+1))+xp]=color;
 }
 
+void UB_VGA_ReadPixel(uint16_t xp, uint16_t yp)
+{
+	//UART_putchar("TEST");
+	//UART_printf("PRINTF");
+	UART_puts("Waarde: ");
+	UART_putint(VGA_RAM1[(xp+1)*yp]);
+
+
+}
 
 //--------------------------------------------------------------
 // interne Funktionen
