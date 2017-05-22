@@ -10,7 +10,7 @@ env:
     - DEPLOY_USERNAME: $ORG_NAME
     - DEPLOY_REPO_NAME: $REPO_NAME
     # Change this project name to the name of your CoIDE project.
-    - PROJECT_NAME: /VGA_core_BMP/VGA_core
+    - PROJECT_NAME: VGA_core
 
 
 build:
@@ -51,5 +51,5 @@ integrations:
       on_failure: always
       on_pull_request: never
   key:
-    - integrationName: deploy_to_gh_pages
+    - integrationName: github
       type: ssh-key
