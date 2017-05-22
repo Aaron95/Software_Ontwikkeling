@@ -24,10 +24,10 @@ void Teken_Rechthoek(uint16_t xp0, uint16_t yp0, uint16_t xp1, uint16_t yp1, uin
 	 *  Input: uint16_t xp0, uint16_t yp0, uint16_t xp1, uint16_t yp1, uint8_t Kleur
 	 *  Subject: Pixels
 	*/
-	Teken_Lijn(xp0, yp0, xp1, yp0, Kleur);
-	Teken_Lijn(xp1, yp0, xp1, yp1, Kleur);
-	Teken_Lijn(xp1, yp1, xp0, yp1, Kleur);
-	Teken_Lijn(xp0, yp1, xp0, yp0, Kleur);
+	Teken_Lijn(xp0, yp0, xp1, yp0, 1, Kleur);
+	Teken_Lijn(xp1, yp0, xp1, yp1, 1, Kleur);
+	Teken_Lijn(xp1, yp1, xp0, yp1, 1, Kleur);
+	Teken_Lijn(xp0, yp1, xp0, yp0, 1, Kleur);
 }
 
 void Teken_Driehoek(uint16_t xp0, uint16_t yp0, uint16_t xp1, uint16_t yp1, uint8_t Kleur)
@@ -47,12 +47,12 @@ void Teken_Driehoek(uint16_t xp0, uint16_t yp0, uint16_t xp1, uint16_t yp1, uint
 	x2 = xp0;
 	y2 = yp1;
 
-	Teken_Lijn(x0, y0, x1, y1, Kleur);
-	Teken_Lijn(x1, y1, x2, y2, Kleur);
-	Teken_Lijn(x2, y2, x0, y0, Kleur);
+	Teken_Lijn(x0, y0, x1, y1, 1, Kleur);
+	Teken_Lijn(x1, y1, x2, y2, 1, Kleur);
+	Teken_Lijn(x2, y2, x0, y0, 1, Kleur);
 }
 
-void Teken_Lijn(uint16_t xp0, uint16_t yp0, uint16_t xp1, uint16_t yp1, uint8_t Kleur)
+void Teken_Lijn(uint16_t xp0, uint16_t yp0, uint16_t xp1, uint16_t yp1, uint16_t Dikte, uint8_t Kleur)
 {
 	/** \fn
 	 *  Action: Deze functie tekent een lijn op basis van de gegeven coördinaten
@@ -60,7 +60,7 @@ void Teken_Lijn(uint16_t xp0, uint16_t yp0, uint16_t xp1, uint16_t yp1, uint8_t 
 	 *  Subject: Pixels
 	*/
 
-  int dx,dy,sdx,sdy,px,py,dxabs,dyabs,i;
+  int dx,dy,sdx,sdy,px,py,dxabs,dyabs,i,j;
   float helling;
 
   dx=xp1-xp0;      /* the horizontal distance of the line */
@@ -77,7 +77,8 @@ void Teken_Lijn(uint16_t xp0, uint16_t yp0, uint16_t xp1, uint16_t yp1, uint8_t 
     {
       px=i+xp1;
       py=helling*i+yp0;
-      UB_VGA_SetPixel(px,py,Kleur);
+      for(j = 0; j<Dikte; j++)
+    	  UB_VGA_SetPixel(px,py+j,Kleur);
     }
   }
   else /* the line is more vertical than horizontal */
@@ -87,7 +88,8 @@ void Teken_Lijn(uint16_t xp0, uint16_t yp0, uint16_t xp1, uint16_t yp1, uint8_t 
     {
       px=helling*i+xp0;
       py=i+yp0;
-      UB_VGA_SetPixel(px,py,Kleur);
+      for(j = 0; j<Dikte; j++)
+          UB_VGA_SetPixel(px+j,py,Kleur);
     }
   }
 }
@@ -100,7 +102,7 @@ void Teken_Bitmap(uint16_t xp0, uint16_t yp0, char *Plaatje)
 	 *  Subject: Pixels
 	*/
 
-	if(Plaatje == "SadSmiley")
+	if(Plaatje == "Smiley_Happy")
 	{
 		int VerticaleTeller;
 		int HorizontaleTeller;
@@ -169,7 +171,7 @@ void Teken_Bitmap(uint16_t xp0, uint16_t yp0, char *Plaatje)
 
 }
 
-int Ellipse(uint16_t xmp, uint16_t ymp, uint16_t Radius_X, uint16_t Radius_Y, uint8_t Kleur)
+void Ellipse(uint16_t xmp, uint16_t ymp, uint16_t Radius_X, uint16_t Radius_Y, uint8_t Kleur)
 {
 	/** \fn
 	 *  Action: Deze functie tekent een ellipse op het scherm op basis van de gegeven startpunten en radii
@@ -180,7 +182,7 @@ int Ellipse(uint16_t xmp, uint16_t ymp, uint16_t Radius_X, uint16_t Radius_Y, ui
 
 	for( pixel=0;  pixel < 800;  pixel++)
 	     { float x = xmp + Radius_X*cos(pixel);
-	       float y = ymp - 0.5* Radius_Y*sin(pixel);    //note 2.
+	       float y = ymp - Radius_Y*sin(pixel);    //note 2.
 	       UB_VGA_SetPixel(x,y, Kleur);
 	     }
 }

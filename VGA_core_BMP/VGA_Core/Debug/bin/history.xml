@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=VGA_Core.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\VGA_Core -TC:\CooCox\CoIDE\configuration\ProgramData\VGA_Core/arm-gcc-link.ld -g -L..\..\.. -lm">
-      <target file="VGA_Core.elf" lastModified="15c21713af9">
-         <source file="..\obj\startup_stm32f4xx.o" lastModified="15c1c18660b"/>
-         <source file="..\obj\main.o" lastModified="15c217138cf"/>
-         <source file="..\obj\stm32f4xx_rcc.o" lastModified="15c1c186ab6"/>
-         <source file="..\obj\stm32f4xx_gpio.o" lastModified="15c1c186b59"/>
-         <source file="..\obj\system_stm32f4xx.o" lastModified="15c1c186bfd"/>
-         <source file="..\obj\stm32f4xx_dma.o" lastModified="15c1c186cb1"/>
-         <source file="..\obj\stm32_ub_vga_screen.o" lastModified="15c2153f05a"/>
-         <source file="..\obj\misc.o" lastModified="15c1c186dee"/>
-         <source file="..\obj\stm32f4xx_tim.o" lastModified="15c1c186f2c"/>
+   <processor signature="4.7.2 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=VGA_Core.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\VGA_Core -TC:\CooCox\CoIDE\configuration\ProgramData\VGA_Core/link.ld -g -L..\..\.. -lm">
+      <target file="VGA_Core.elf" lastModified="15c2feb2b10">
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="15c2fe034c4"/>
+         <source file="..\obj\main.o" lastModified="15c2feb28c5"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="15c2fe03972"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="15c2fe03a17"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="15c2fe03ac0"/>
+         <source file="..\obj\stm32f4xx_dma.o" lastModified="15c2fe03b59"/>
+         <source file="..\obj\stm32_ub_vga_screen.o" lastModified="15c2fe03c28"/>
+         <source file="..\obj\misc.o" lastModified="15c2fe03c9e"/>
+         <source file="..\obj\stm32f4xx_tim.o" lastModified="15c2fe03dd2"/>
       </target>
    </processor>
 </history>
