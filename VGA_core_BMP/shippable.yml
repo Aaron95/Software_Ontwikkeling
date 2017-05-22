@@ -2,7 +2,7 @@ language: none
 
 branches:
   only:
-    - master
+    - VGA_core_BMP
     
 env:
   global:
@@ -10,7 +10,7 @@ env:
     - DEPLOY_USERNAME: $ORG_NAME
     - DEPLOY_REPO_NAME: $REPO_NAME
     # Change this project name to the name of your CoIDE project.
-    - PROJECT_NAME: VGA_core.coproj
+    - PROJECT_NAME: VGA_core
 
 
 build:
