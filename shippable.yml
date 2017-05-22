@@ -51,5 +51,5 @@ integrations:
       on_failure: always
       on_pull_request: never
   key:
-    - integrationName: Github
+    - integrationName: deploy_to_gh_pages
       type: ssh-key
