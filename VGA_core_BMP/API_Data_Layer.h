@@ -169,7 +169,7 @@ void Teken_Bitmap(uint16_t xp0, uint16_t yp0, char *Plaatje)
 
 }
 
-int Ellipse(uint16_t xmp, uint16_t ymp, uint16_t Radius_X, uint16_t Radius_Y, uint8_t Kleur)
+void Ellipse(uint16_t xmp, uint16_t ymp, uint16_t Radius_X, uint16_t Radius_Y, uint8_t Kleur)
 {
 	/** \fn
 	 *  Action: Deze functie tekent een ellipse op het scherm op basis van de gegeven startpunten en radii
