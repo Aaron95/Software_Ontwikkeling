@@ -2,7 +2,7 @@ language: none
 
 branches:
   only:
-    - VGA_core_BMP
+    - master
     
 env:
   global:
