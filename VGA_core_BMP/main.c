@@ -60,6 +60,7 @@ int main(void)
   while(1)
   {
 	  int buf =0;
+	UART_puts("\n\rEnter command: ");
 	  UART_gets(buf, 1);
 	  switch(buf)
 	  {
